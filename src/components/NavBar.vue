@@ -6,11 +6,11 @@
         <span>WEATHER APP</span>
       </v-toolbar-title>
       <v-spacer></v-spacer>
-      <v-toolbar-items class="hidden-sm-and-down">
-        <v-btn flat><router-link to="/weather/toronto">Toronto</router-link></v-btn>
-        <v-btn flat><router-link to="/weather/montreal">Montreal</router-link></v-btn>
-        <v-btn flat><router-link to="/gallery">Gallery</router-link></v-btn>
-        <v-btn flat><router-link to="/contact">Contact Us</router-link></v-btn>
+      <v-toolbar-items class="hidden-sm-and-down toolbar-items">
+        <v-btn flat to="/weather/toronto">Toronto</v-btn>
+        <v-btn flat to="/weather/montreal">Montreal</v-btn>
+        <v-btn flat to="/gallery">Gallery</v-btn>
+        <v-btn flat to="/contact">Contact Us</v-btn>
       </v-toolbar-items>
     </v-toolbar>
   </nav>

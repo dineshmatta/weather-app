@@ -2,11 +2,8 @@
   <v-app class="grey lighten-4">
     <NavBar />
     <v-content>
-      <!-- <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link> -->
-       <router-view/>
+      <router-view/>
     </v-content>
-   
   </v-app>
 </template>
 
