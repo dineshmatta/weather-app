@@ -7,8 +7,7 @@
             <v-flex
               v-for="image in images.slice(0,10)"
               :key="image.id"
-              xs4
-            >
+              xs4>
               <ImageCard :data="image"/>
             </v-flex>
           </v-layout>

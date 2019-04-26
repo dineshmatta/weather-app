@@ -1,16 +1,16 @@
 import Vue from 'vue';
 import Vuex from 'vuex';
+import {ITorontoState} from './modules/toronto';
+import {IMontrealState} from './modules/montreal';
+import {IPhotoState} from './modules/photo';
 
 Vue.use(Vuex);
 
-export default new Vuex.Store({
-  state: {
+export interface IRootState {
+  toronto: ITorontoState;
+  montreal: IMontrealState;
+  photo: IPhotoState;
+}
 
-  },
-  mutations: {
-
-  },
-  actions: {
-
-  },
-});
+// Declare empty store first, dynamically registering all modules later.
+export default new Vuex.Store<IRootState>({});

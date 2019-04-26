@@ -3,6 +3,10 @@ import store from '@/store';
 import { MontrealWeatherInfo } from '../models';
 import * as api from '@/store/api';
 
+export interface IMontrealState {
+  weatherInfo: [];
+}
+
 @Module({
   dynamic: true,
   namespaced: true,

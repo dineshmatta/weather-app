@@ -3,6 +3,10 @@ import store from '@/store';
 import { TorontoWeatherInfo } from '../models';
 import * as api from '@/store/api';
 
+export interface ITorontoState {
+  weatherInfo: [];
+}
+
 @Module({
   dynamic: true,
   namespaced: true,

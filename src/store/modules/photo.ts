@@ -3,6 +3,10 @@ import store from '@/store';
 import { PhotoApiResponse } from '../models';
 import * as api from '@/store/api';
 
+export interface IPhotoState {
+  images: [];
+}
+
 @Module({
   dynamic: true,
   namespaced: true,
