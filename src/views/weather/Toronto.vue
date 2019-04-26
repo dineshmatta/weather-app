@@ -1,6 +1,13 @@
 <template>
-  <div>
+  <div v-if="!isLoading">
     <WeatherCard :data="weatherData" title="Toronto"/>
+  </div>
+  <div v-else>
+    <v-progress-circular
+      :size="50"
+      indeterminate
+      color="primary"
+    ></v-progress-circular>
   </div>
 </template>
 
@@ -17,10 +24,12 @@ import { TorontoWeatherInfo } from '@/store/models';
 })
 export default class Toronto extends Vue {
   public weatherData: TorontoWeatherInfo[] = [];
+  public isLoading: boolean = true;
 
   public async created() {
     const data = await torontoWeather.refreshWeatherInfo();
     this.weatherData = data;
+    this.isLoading = false;
   }
 
 }
