@@ -10,9 +10,11 @@
     "test:unit": "vue-cli-service test:unit"
   },
   "dependencies": {
+    "axios": "^0.18.0",
     "core-js": "^2.6.5",
     "vue": "^2.6.10",
     "vue-class-component": "^7.0.2",
+    "vue-gallery": "^2.0.0",
     "vue-property-decorator": "^8.1.0",
     "vue-router": "^3.0.3",
     "vuetify": "^1.5.13",
@@ -28,9 +30,12 @@
     "@vue/test-utils": "1.0.0-beta.29",
     "babel-core": "7.0.0-bridge.0",
     "lint-staged": "^8.1.5",
+    "stylus": "^0.54.5",
+    "stylus-loader": "^3.0.2",
     "ts-jest": "^23.0.0",
     "typescript": "^3.4.3",
-    "vue-template-compiler": "^2.5.21"
+    "vue-template-compiler": "^2.5.21",
+    "vuex-module-decorators": "^0.9.8"
   },
   "gitHooks": {
     "pre-commit": "lint-staged"

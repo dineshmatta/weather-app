@@ -1,9 +1,9 @@
 import Vue from 'vue';
 import Router from 'vue-router';
 import Toronto from './views/weather/Toronto.vue';
-import Montreal from './views/weather/Montreal.vue';
-import Gallery from './views/Gallery.vue';
-import Contact from './views/Contact.vue';
+// import Montreal from './views/weather/Montreal.vue';
+// import Gallery from './views/Gallery.vue';
+// import Contact from './views/Contact.vue';
 
 Vue.use(Router);
 
@@ -17,22 +17,22 @@ export default new Router({
     {
       path: '/weather/toronto',
       name: 'Toronto',
-      component: Toronto,
+      component: () => import(/* webpackChunkName: "about" */ './views/weather/Toronto.vue'),
     },
     {
       path: '/weather/montreal',
       name: 'Montreal',
-      component: Montreal,
+      component: () => import(/* webpackChunkName: "about" */ './views/weather/Montreal.vue'),
     },
     {
       path: '/gallery',
       name: 'Gallery',
-      component: Gallery,
+      component: () => import(/* webpackChunkName: "about" */ './views/Gallery.vue'),
     },
     {
       path: '/contact',
       name: 'Contact',
-      component: Contact,
+      component: () => import(/* webpackChunkName: "about" */ './views/Contact.vue'),
     },
   ],
 });
