@@ -1,3 +1,7 @@
+## Task 1 - solution
+
+https://gist.github.com/dineshmatta/9059e7ab7010e03f16d98caaf0c22758
+
 # weather-app
 
 ## Project setup
